@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", serif;
+
+}
+
+a:hover {
+    /* color: blueviolet; */
+}
+
+.top-menu-contact li a {
+    text-decoration: none;
+}
+
+.top-menu-contact li a:hover {
+    /* color: blueviolet !important; */
+}
