@@ -5,6 +5,9 @@
     font-family: "Rubik", serif;
 
 }
+body{
+    background-color: #d8e2dc;
+}
 
 a:hover {
     /* color: blueviolet; */
@@ -13,7 +16,110 @@ a:hover {
 .top-menu-contact li a {
     text-decoration: none;
 }
+.m-img {
+    background-image: url('./web-assets/s1.jpg');
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
 
-.top-menu-contact li a:hover {
-    /* color: blueviolet !important; */
+.service-content{
+  display: block;
+ transition: 1.2s;
+ overflow: hidden;
+
+}
+.service-content:hover{
+    box-shadow: 1px 3px 15px #669bbc;
+    transform: translateY(-20px);
+}
+.service-content img{
+    /* display:block; */
+    cursor: pointer;
+    height: 285px;
+}
+.service-content img:hover{
+    transform: scale(1.1);
+    /* transform: translateY(-10px); */
+
+}
+
+.contacts{
+    margin-top: 90px;
+}
+.contact-section{
+    margin-top: 60px;
+}
+.contact-section p{
+  font-size: 20px;
+  line-height: 25px;
+}
+.contact-section p i{
+    font-size: 40px;
+    margin: 20px;
+}
+
+form{
+    margin-top: 60px;
+}
+form label{
+    font-size: 26px;
+}
+form input{
+    width: 100%;
+    height: 60px;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+textarea{
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+.parent{
+    width:100%;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.child{
+    /* width: 100%; */
+    height: 100%;
+    background-size: cover;
+    transition: all 0.8s;
+}
+.parent:hover .child{
+    transform:scale(1.1) ;
+}
+
+.bg-one{
+    background-image:url('./web-assets/Passport.webp') ;
+}
+.bg-two{
+    background-image:url('./web-assets/aadhar.avif') ;
+}
+
+
+
+.slider img{
+    width: 100%;
+    height: 40vh;
+}
+.slick-slide{
+    margin: 0 10px;
+
 }
