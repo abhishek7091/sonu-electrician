@@ -8,17 +8,18 @@
   <!-- bootstrap link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
   <!-- fontawesome link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- google font -->
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
 
-  <!-- slcik link -->
-
+  <!-- slick link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
     integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -35,7 +36,6 @@
 
 <body>
 
-
   <!-- top-menu starts -->
   <section class="bg-primary">
     <div class="container">
@@ -47,13 +47,13 @@
                 <li><a href="#" class="text-white me-3"><i class="fa-solid fa-envelope"></i> sonumw7763@gmail.com</a>
                 </li>
                 <li><a href="#" class="text-white me-3"><i class="fa-solid fa-phone"></i> 7763085337</a></li>
-                <li><a href="#" class="text-white me-3"><i class="fa-solid fa-location-dot"></i> Biswar, Mairwa,
-                    Siwan(Bihar)</a></li>
+                <li class="d-none d-lg-block"><a href="#" class="text-white me-3"><i
+                      class="fa-solid fa-location-dot"></i> Biswar, Mairwa, Siwan(Bihar)</a></li>
               </ul>
 
             </div>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 d-none d-lg-block">
             <div class="social-medias_container">
               <ul class="social-medias list-unstyled mb-0 d-flex justify-content-end">
                 <li><a href="" class="text-white me-3"><i class="fa-brands fa-square-facebook"></i></a></li>
@@ -77,9 +77,9 @@
   <!-- video-banner ends -->
 
   <!-- marquee section strat -->
-  <marquee class="py-md-1 bg-light marquee-section" behavior="scroll" direction="left" onmouseover="this.stop();"
-    onmouseout="this.start();">
-    <p style="font-size: 12px;color:#F16623;font-weight: 600;">
+  <marquee class="bg-light marquee-section" behavior="scroll" direction="left" onmouseover="this.stop();"
+    onmouseout="this.start();" style="margin-top: -5px;">
+    <p class="mb-0" style="font-size: 12px; color:#F16623; font-weight: 600;">
       हमारे यहां इलेक्ट्रिक समान मिलता है। और हमारे ऑनलाइन भी किया जाता है।
     </p>
   </marquee>
@@ -89,16 +89,32 @@
   <section>
     <div class="container my-5">
       <div class="row align-items-center">
-        <div class="col-lg-8">
-          <h1> sonu kumar</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, enim dolor similique tempore
-            perferendis praesentium esse repellendus suscipit minima, impedit numquam? Voluptatem explicabo expedita aut
-            hic deserunt, ut minus.</p>
-          <button type="button" class="btn btn-outline-secondary">Read more</button>
+        <div class="col-lg-8 order-2 order-lg-1">
+          <h1> Sonu Kumar (Electrician) </h1>
+          <h6 class="mb-4"> Welcome to Sonu Electrician – Your One-Stop Solution for Electrical & Digital Services!
+          </h6>
+          <p>
+            We provide a wide range of services to make your life easier and more convenient. From expert house wiring
+            and fan repair to essential digital services like PAN card application, Aadhaar updates, and ticket booking,
+            we've got you covered. Need cash withdrawal services? We offer that too! Our skilled electricians ensure
+            safe and efficient electrical solutions for your home and office.
+          </p>
+
+          <p>
+            With a commitment to quality, reliability, and customer satisfaction, we strive to deliver the best service
+            experience. Contact us today for hassle-free and professional assistance!
+          </p>
+
+          <div class="contact-btn mt-4">
+            <a href="#contact" class="contact-btn1"> Contact Us <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
         </div>
-        <div class="col-lg-4">
-          <!-- <img src="web-assets/s1.jpg" alt="" height="300" class="img-fluid m-lg-5"> -->
-          <div class="m-img"></div>
+
+        <div class="col-lg-4 order-1 order-md-2">
+          <div class="main-img mb-4">
+            <img src="web-assets/s1.jpg" alt="main image" class="img-fluid rounded-3">
+          </div>
+
         </div>
 
       </div>
@@ -107,14 +123,15 @@
   <!-- home section end -->
 
   <!-- service section start -->
-  <section>
+  <section class="my-5">
     <div class="container">
-      <div class="serives text-center mt-3">
-        <h1>Our Services</h1>
+      <div class="serives text-center mt-3 mb-5">
+        <h2 class="fs-1">Our Services</h2>
+        <p> Tailored Solutions to Meet Your Needs </p>
       </div>
       <div class="row">
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="service-content border border-secondary m-3 rounded-2">
+          <div class="service-content border border-1 bg-white rounded-3 mb-4">
             <!-- <img src="web-assets/aadhar.avif" alt="" class="img-fluid rounded-3"> -->
             <div class="parent">
               <div class="child bg-two">
@@ -122,148 +139,113 @@
               </div>
             </div>
 
-            <p class="border border-secondary mt-3 mb-0 p-2"><i class="fa-solid fa-circle-check me-2"></i>हमारे यहाँ
-              आधार कार्ड सुधारा जाता है|</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="service-content border border-secondary m-3 rounded-2">
-            <!-- <img src="web-assets/with.jpeg" alt="" class="img-fluid rounded-3"> -->
-            <div class="parent">
-              <div class="child bg-one">
-                <!-- <img src="web-assets/Passport.webp" alt=""> -->
-              </div>
-            </div>
-
-            <p class="border border-secondary mt-3 mb-0 p-2"><i class="fa-solid fa-circle-check me-2"></i>हमारे यहाँ
-              आधार कार्ड सुधारा जाता है|</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="service-content border border-secondary m-3 rounded-2">
-            <!-- <img src="web-assets/Passport.webp" alt="" class="img-fluid rounded-3 "> -->
-            <div class="parent">
-              <div class="child bg-one">
-                <!-- <img src="web-assets/Passport.webp" alt=""> -->
-              </div>
-            </div>
-
-            <p class="border border-secondary mt-3 mb-0 p-2"><i class="fa-solid fa-circle-check me-2"></i>हमारे यहाँ
-              आधार कार्ड सुधारा जाता है|</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="service-content border border-secondary m-3 rounded-2">
-            <!-- <img src="web-assets/Passport.webp" alt="" class="img-fluid rounded-3"> -->
-            <div class="parent">
-              <div class="child bg-one">
-                <!-- <img src="web-assets/Passport.webp" alt=""> -->
-              </div>
-            </div>
-
-            <p class="border border-secondary mt-3 mb-0 p-2"><i class="fa-solid fa-circle-check me-2"></i>हमारे यहाँ
-              आधार कार्ड सुधारा जाता है|</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="service-content border border-secondary m-3 rounded-2">
-            <!-- <img src="web-assets/Passport.webp" alt="" class="img-fluid rounded-3"> -->
-            <div class="parent">
-              <div class="child bg-one">
-                <!-- <img src="web-assets/Passport.webp" alt=""> -->
-              </div>
-            </div>
-
-            <p class="border border-secondary mt-3 mb-0 p-2"><i class="fa-solid fa-circle-check me-2"></i>हमारे यहाँ
-              आधार कार्ड सुधारा जाता है|</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="service-content border border-secondary m-3 rounded-2">
-            <!-- <img src="web-assets/Passport.webp" alt="" class="img-fluid rounded-3 "> -->
-            <div class="parent">
-              <div class="child bg-one">
-                <!-- <img src="web-assets/Passport.webp" alt=""> -->
-              </div>
-            </div>
-
-            <p class="border border-secondary mt-3 mb-0 p-2"><i class="fa-solid fa-circle-check me-2"></i>हमारे यहाँ
+            <p class="my-3 p-2"><i class="fa-solid text-success fa-circle-check me-2"></i>हमारे यहाँ
               आधार कार्ड सुधारा जाता है|</p>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="service-content border border-secondary m-3 rounded-2">
-            <!-- <img src="web-assets/Passport.webp" alt="" class="img-fluid rounded-3 "> -->
+          <div class="service-content border border-1 bg-white rounded-3 mb-4">
+            <!-- <img src="web-assets/aadhar.avif" alt="" class="img-fluid rounded-3"> -->
             <div class="parent">
-              <div class="child bg-one">
+              <div class="child bg-two">
                 <!-- <img src="web-assets/Passport.webp" alt=""> -->
               </div>
             </div>
 
-            <p class="border border-secondary mt-3 mb-0 p-2"><i class="fa-solid fa-circle-check me-2"></i>हमारे यहाँ
+            <p class="my-3 p-2"><i class="fa-solid text-success fa-circle-check me-2"></i>हमारे यहाँ
               आधार कार्ड सुधारा जाता है|</p>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="service-content border border-secondary m-3 rounded-2">
-            <!-- <img src="web-assets/Passport.webp" alt="" class="img-fluid rounded-3 "> -->
-
+          <div class="service-content border border-1 bg-white rounded-3 mb-4">
+            <!-- <img src="web-assets/aadhar.avif" alt="" class="img-fluid rounded-3"> -->
             <div class="parent">
-              <div class="child bg-one">
+              <div class="child bg-two">
                 <!-- <img src="web-assets/Passport.webp" alt=""> -->
               </div>
             </div>
 
-            <p class="border border-secondary mt-3 mb-0 p-2"><i class="fa-solid fa-circle-check me-2"></i>हमारे यहाँ
+            <p class="my-3 p-2"><i class="fa-solid text-success fa-circle-check me-2"></i>हमारे यहाँ
               आधार कार्ड सुधारा जाता है|</p>
           </div>
         </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="service-content border border-1 bg-white rounded-3 mb-4">
+            <!-- <img src="web-assets/aadhar.avif" alt="" class="img-fluid rounded-3"> -->
+            <div class="parent">
+              <div class="child bg-two">
+                <!-- <img src="web-assets/Passport.webp" alt=""> -->
+              </div>
+            </div>
 
+            <p class="my-3 p-2"><i class="fa-solid text-success fa-circle-check me-2"></i>हमारे यहाँ
+              आधार कार्ड सुधारा जाता है|</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="service-content border border-1 bg-white rounded-3 mb-4">
+            <!-- <img src="web-assets/aadhar.avif" alt="" class="img-fluid rounded-3"> -->
+            <div class="parent">
+              <div class="child bg-two">
+                <!-- <img src="web-assets/Passport.webp" alt=""> -->
+              </div>
+            </div>
+
+            <p class="my-3 p-2"><i class="fa-solid text-success fa-circle-check me-2"></i>हमारे यहाँ
+              आधार कार्ड सुधारा जाता है|</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <!-- service section start -->
 
-  <!-- COntact section start -->
-  <section>
+
+  <!-- contact-us starts -->
+  <section class="my-5 py-3" id="contact">
     <div class="container">
-      <div class="contacts text-center">
-        <h2>Conatct Us </h2>
+      <div class="contact-title mb-5 text-center">
+        <h2 class="fs-1">Contact Us</h2>
+        <p> We're Here to Help – Reach Out Anytime! </p>
       </div>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-6">
-          <div class="contact-section">
-            <h2 class=".fs-4 b-2">contact me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam ullam consequatur velit quidem vel.
-            </p>
-            <p><i class="fa-solid fa-square-phone .fs-3"></i>+91 9631133225</p>
-            <p><i class="fa-solid fa-square-envelope"></i>sonukumw7763@gmail.com</p>
-            <p><i class="fa-solid fa-location-dot"></i>biswar </p>
 
+      <div class="contact-cards">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="contact-card mb-4 rounded-3">
+              <img src="web-assets/contact-us.avif" class="img-fluid rounded-3" loading="lazy" alt="contact-us image">
+            </div>
           </div>
-        </div>
 
-        <div class="col-12 col-md-6 col-lg-6">
-          <form class="contact-sections">
-            <label for="text">Enter Your Name:</label>
-            <input type="text" placeholder="Enter Your Name" name="name"><br>
-            <label for="email">Email:</label>
-            <input type="email" placeholder="Enter Your Email" name="email"><br>
-            <label for="">Write Your Massage Here:</label>
-            <textarea name="" id="" placeholder="write massage here.................."></textarea>
-            <button type="button" class="btn btn-outline-secondary mt-3">Submit</button>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="contact-card mb-4 border border-1 text-center py-5 rounded-3">
+              <img src="web-assets/telephone.png" width="100" height="100" class="img-fluid rounded-3 mb-3"
+                loading="lazy" alt="contact-us image">
+              <p>+91 9631133225</p>
+            </div>
+          </div>
 
-          </form>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="contact-card mb-4 border border-1 text-center py-5 rounded-3">
+              <img src="web-assets/mail.png" width="100" height="100" class="img-fluid rounded-3 mb-3" loading="lazy"
+                alt="contact-us image">
+              <p>sonukumw7763@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="contact-card mb-4 border border-1 text-center py-5 rounded-3">
+              <img src="web-assets/map.png" width="100" height="100" class="img-fluid rounded-3 mb-3" loading="lazy"
+                alt="contact-us image">
+              <p>Biswar, Mairwa, Siwan (Bihar)</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- COntact section end -->
+  <!-- contact-us ends -->
+
 
   <!-- slcik section start-->
 
@@ -304,35 +286,36 @@
 
   <!-- slcik section end-->
 
+  <h4 class="my-5 py-5 text-center">Coming Soon....</h4>
+
+
+  <!-- phone icon start -->
+  <a href="tel:7763085337" class="phone-icon" target="_blank" aria-label="phone icon">
+    <i class="fa-solid fa-phone"></i>
+  </a>
+  <!-- phone icon end -->
+
+
+  <!-- whatsapp icon start -->
+  <a href="https://api.whatsapp.com/send?phone=917763085337&amp;text=Hi%20I%20had%20a%20Query." class="whatsapp-icon"
+    target="_blank" aria-label="whatsapp icon">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <!-- whatsapp icon end -->
+
 
   <!-- footer section staert -->
   <section>
-    <div class="container">
+    <div class="container-fluid bg-dark">
       <div class="row">
         <div class="col-12">
-          <h3>@Copyright By Abhishek...</h3>
-
+          <h6 class="text-primary text-center py-4"> @ Copyright 2025 | All Rights are reserved by sonuelectrician.
+          </h6>
         </div>
-        <div class="col-12">
-          <p><i class="fa-brands fa-square-instagram d-block` "></i></p>
-        </div>
-
-
       </div>
     </div>
   </section>
-
   <!-- footer section staert -->
-
-
-
-
-
-
-
-
-
-  <h4 class="my-5 py-5 text-center">Coming Soon....</h4>
 
 
 
@@ -354,11 +337,10 @@
 
   <!-- slick js code -->
   <script>
-
     $('.autoplay').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 2000,
     });
   </script>
